@@ -1,0 +1,64 @@
+ /* Optional global styles to give some spacing and background color */
+ body {
+ 	background-color: #f8f9fa;
+ 	padding-top: 20px;
+ }
+
+ .container {
+ 	max-width: 1200px;
+ }
+
+ /* Style for each card */
+ .card {
+ 	border: 1px solid #dee2e6;
+ 	border-radius: 8px;
+ 	transition: transform 0.2s;
+ 	height: 580px;
+ }
+
+ .card:hover {
+ 	transform: scale(1.05);
+ 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Ensure the cards are evenly spaced and centered within the row */
+ .col-md-4 {
+ 	padding: 20px;
+ }
+
+ /* Style for the navigation bar */
+ .navbar {
+ 	background-color: #333;
+ 	color: #fff;
+ 	padding: 10px;
+ }
+
+ .navbar a {
+ 	color: #fff;
+ 	text-decoration: none;
+ 	margin: 0 15px;
+ }
+
+ .navbar a:hover {
+ 	color: #ddd;
+ }
+
+ /* Custom CSS for the card content */
+ .card-content {
+ 	max-height: 120px;
+ 	overflow: hidden;
+ 	transition: max-height 0.3s ease;
+ 	/* Add a smooth transition effect */
+ }
+
+ /* Style for expanded content */
+ .card-content.expanded {
+ 	max-height: none;
+ 	/* Remove the max-height restriction */
+ 	transition: 1ms ease-in;
+ }
+
+ .show-more {
+ 	color: blue;
+ 	cursor: pointer;
+ }
